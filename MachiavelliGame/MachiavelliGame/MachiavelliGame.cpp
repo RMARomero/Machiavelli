@@ -1,11 +1,36 @@
 // MachiavelliGame.cpp : Defines the entry point for the console application.
 //
-
 #include "stdafx.h"
+#include "Socket.h"
+#include <thread>
+#include <memory>
+#include <string>
 
+using namespace std;
+
+void connect_to_server()
+{
+	int port = 1080;
+
+	ClientSocket client("localhost", port);
+}
 
 int _tmain(int argc, _TCHAR* argv[])
 {
+	//std::thread connection{ connect_to_server };//start server
+	//connection.detach();
+
+	ClientSocket* client = new ClientSocket("localhost", 1080);
+
+	string input = "";
+	while (true)
+	{
+		cin >> input;
+		cout << input << "\n>";
+	}
+
+
+
 	return 0;
 }
 

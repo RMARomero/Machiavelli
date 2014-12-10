@@ -3,7 +3,6 @@
 #include "stdafx.h"
 #include "Socket.h"
 #include <thread>
-#include <memory>
 #include <string>
 
 using namespace std;
@@ -25,12 +24,11 @@ int _tmain(int argc, _TCHAR* argv[])
 	string input = "";
 	while (true)
 	{
-		cin >> input;
-		cout << input << "\n>";
+		string cmd = client->readline();
+		cerr << cmd << '\n';
+		getline(cin, input);
+		client->write(input + "\n");
 	}
-
-
-
 	return 0;
 }
 

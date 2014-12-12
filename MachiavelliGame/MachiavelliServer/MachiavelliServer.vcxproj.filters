@@ -39,6 +39,9 @@
     <ClInclude Include="..\..\..\..\AVANS\Minor\CPP2\Opdrachten\socketexample\socketexample\throw.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="BuildingCard.h">
+      <Filter>Machiavelli</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -55,6 +58,9 @@
     </ClCompile>
     <ClCompile Include="..\..\..\..\AVANS\Minor\CPP2\Opdrachten\socketexample\socketexample\throw.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BuildingCard.cpp">
+      <Filter>Machiavelli</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

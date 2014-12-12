@@ -9,6 +9,11 @@
 
 #include <stdio.h>
 #include <tchar.h>
+#include <string>
+#include <vector>
+
+
+enum CardColor { YELLOW, BLUE, GREEN, RED, PURPLE };
 
 
 

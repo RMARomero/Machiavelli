@@ -83,6 +83,7 @@
     <ClInclude Include="..\..\..\..\AVANS\Minor\CPP2\Opdrachten\socketexample\socketexample\Socket.h" />
     <ClInclude Include="..\..\..\..\AVANS\Minor\CPP2\Opdrachten\socketexample\socketexample\Sync_queue.h" />
     <ClInclude Include="..\..\..\..\AVANS\Minor\CPP2\Opdrachten\socketexample\socketexample\throw.h" />
+    <ClInclude Include="Board.h" />
     <ClInclude Include="BuildingCard.h" />
     <ClInclude Include="IPlayer.h" />
     <ClInclude Include="stdafx.h" />
@@ -92,6 +93,7 @@
     <ClCompile Include="..\..\..\..\AVANS\Minor\CPP2\Opdrachten\socketexample\socketexample\main.cpp" />
     <ClCompile Include="..\..\..\..\AVANS\Minor\CPP2\Opdrachten\socketexample\socketexample\Socket.cpp" />
     <ClCompile Include="..\..\..\..\AVANS\Minor\CPP2\Opdrachten\socketexample\socketexample\throw.cpp" />
+    <ClCompile Include="Board.cpp" />
     <ClCompile Include="BuildingCard.cpp" />
     <ClCompile Include="IPlayer.cpp" />
     <ClCompile Include="MachiavelliServer.cpp" />

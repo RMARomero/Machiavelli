@@ -1,20 +1,19 @@
-#include "stdafx.h"
-#include "IPlayer.h"
+#include "Player.h"
 
 using namespace std;
 
-IPlayer::~IPlayer()
+Player::~Player()
 {
 }
 
-void IPlayer::build(int idx)
+void Player::build(int idx)
 {
 	auto it = std::next(m_Hand.begin(), idx);
 	move(it, it, back_inserter(m_Buildings));
 	m_Hand.erase(it);
 }
 
-int IPlayer::stealMoney()
+int Player::stealMoney()
 {
 	int ret = m_iCoins;
 	m_iCoins = 0;

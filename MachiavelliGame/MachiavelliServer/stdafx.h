@@ -11,6 +11,8 @@
 #include <tchar.h>
 #include <string>
 #include <vector>
+#include <deque>
+#include <algorithm>
 
 
 enum CardColor { YELLOW, BLUE, GREEN, RED, PURPLE };

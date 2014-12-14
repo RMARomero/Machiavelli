@@ -2,13 +2,16 @@
 #include "stdafx.h"
 #include "BuildingCard.h"
 
+class IRole;
 namespace std {
 
-	class IPlayer
+	class Player
 	{
 	public:
-		IPlayer(int coins, bool king) : m_iCoins{ coins }, m_bKingToken{ king } {}
-		virtual ~IPlayer();
+		Player(int coins, bool king) : m_iCoins{ coins }, m_bKingToken{ king } {}
+		virtual ~Player();
+
+		void Run();
 
 		void giveCard(BuildingCard card) { m_Hand.push_back(card); }
 		void giveMoney(int coins) { m_iCoins += coins; }
@@ -17,17 +20,10 @@ namespace std {
 		void build(int idx);
 		int stealMoney();
 
-		virtual string getBuildingOptions() = 0;
-		virtual void earnBuildingMoney() = 0;
-		virtual void runIncomePhase() = 0;
-		virtual void runSpecialPhase() = 0;
-		virtual void runBuildingPhase() = 0;
-		virtual void runExtraPhase() = 0;
-
 	protected:
 		bool m_bKingToken;
 		int m_iCoins;
-		Role m_eRole;
+		IRole m_Role;
 		vector<BuildingCard> m_Hand;
 		vector<BuildingCard> m_Buildings;
 

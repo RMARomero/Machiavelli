@@ -16,6 +16,15 @@
     <Filter Include="Machiavelli">
       <UniqueIdentifier>{5bc9c994-3932-4bcb-aace-4ef472354da6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Roles">
+      <UniqueIdentifier>{588e0ec1-17d6-439d-ba14-4fc471ed9e94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Roles\Headers">
+      <UniqueIdentifier>{edb2af5f-23cd-4993-85b8-b34e1c486178}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Roles\Sources">
+      <UniqueIdentifier>{99ce8eaf-b16f-4657-a21a-88e38c1ff01d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -42,11 +51,47 @@
     <ClInclude Include="BuildingCard.h">
       <Filter>Machiavelli</Filter>
     </ClInclude>
-    <ClInclude Include="IPlayer.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Board.h">
-      <Filter>Header Files</Filter>
+      <Filter>Machiavelli</Filter>
+    </ClInclude>
+    <ClInclude Include="GameMaster.h">
+      <Filter>Machiavelli</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Machiavelli</Filter>
+    </ClInclude>
+    <ClInclude Include="Architect.h">
+      <Filter>Roles\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Assassin.h">
+      <Filter>Roles\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Demolisher.h">
+      <Filter>Roles\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="IRole.h">
+      <Filter>Roles\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="King.h">
+      <Filter>Roles\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Mage.h">
+      <Filter>Roles\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Merchant.h">
+      <Filter>Roles\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Priest.h">
+      <Filter>Roles\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="RoleContext.h">
+      <Filter>Roles\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Thief.h">
+      <Filter>Roles\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Peasant.h">
+      <Filter>Roles\Headers</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -68,11 +113,47 @@
     <ClCompile Include="BuildingCard.cpp">
       <Filter>Machiavelli</Filter>
     </ClCompile>
-    <ClCompile Include="IPlayer.cpp">
+    <ClCompile Include="Board.cpp">
       <Filter>Machiavelli</Filter>
     </ClCompile>
-    <ClCompile Include="Board.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="GameMaster.cpp">
+      <Filter>Machiavelli</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Machiavelli</Filter>
+    </ClCompile>
+    <ClCompile Include="Architect.cpp">
+      <Filter>Roles\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Assassin.cpp">
+      <Filter>Roles\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Demolisher.cpp">
+      <Filter>Roles\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="IRole.cpp">
+      <Filter>Roles\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="King.cpp">
+      <Filter>Roles\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Mage.cpp">
+      <Filter>Roles\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Merchant.cpp">
+      <Filter>Roles\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Priest.cpp">
+      <Filter>Roles\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="RoleContext.cpp">
+      <Filter>Roles\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Thief.cpp">
+      <Filter>Roles\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Peasant.cpp">
+      <Filter>Roles\Sources</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

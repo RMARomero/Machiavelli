@@ -3,8 +3,8 @@
 #include "BuildingCard.h"
 #include "Player.h"
 
-namespace std{
-
+namespace std
+{
 	class IRole
 	{
 	public:
@@ -26,3 +26,4 @@ namespace std{
 	};
 }
 
+} //namespace

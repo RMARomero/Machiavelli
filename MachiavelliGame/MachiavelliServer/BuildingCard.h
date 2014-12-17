@@ -5,7 +5,7 @@
 	{
 	public:
 		BuildingCard(int cost, std::string name, std::string flavour, CardColor color)
-			: m_iCost{ cost }, m_sName{ name }, m_sFlavourTxt{ flavour }, m_eColor{ color }{}
+			: m_iCost{ cost }, m_sName( name ), m_sFlavourTxt(flavour), m_eColor{ color }{}
 
 		std::string getName() { return m_sName; }
 		std::string getFlavour() { return m_sFlavourTxt; }

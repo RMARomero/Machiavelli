@@ -2,9 +2,10 @@
 #include "stdafx.h"
 #include "BuildingCard.h"
 
-class IRole;
+
 namespace std {
 
+	class IRole;
 	class Player
 	{
 	public:
@@ -15,7 +16,7 @@ namespace std {
 
 		void giveCard(BuildingCard card) { m_Hand.push_back(card); }
 		void giveMoney(int coins) { m_iCoins += coins; }
-		void destroyBuilding(int idx) { m_Buildings.erase(m_Buildings.begin + idx); }
+		void destroyBuilding(int idx) { m_Buildings.erase(m_Buildings.begin() + idx); }
 
 		void build(int idx);
 		int stealMoney();
@@ -23,7 +24,7 @@ namespace std {
 	protected:
 		bool m_bKingToken;
 		int m_iCoins;
-		IRole m_Role;
+		unique_ptr<IRole> m_Role;
 		vector<BuildingCard> m_Hand;
 		vector<BuildingCard> m_Buildings;
 

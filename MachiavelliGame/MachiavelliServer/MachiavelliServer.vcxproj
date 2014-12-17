@@ -79,14 +79,11 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\AVANS\Minor\CPP2\Opdrachten\socketexample\socketexample\ClientCommand.h" />
-    <ClInclude Include="..\..\..\..\AVANS\Minor\CPP2\Opdrachten\socketexample\socketexample\Socket.h" />
-    <ClInclude Include="..\..\..\..\AVANS\Minor\CPP2\Opdrachten\socketexample\socketexample\Sync_queue.h" />
-    <ClInclude Include="..\..\..\..\AVANS\Minor\CPP2\Opdrachten\socketexample\socketexample\throw.h" />
     <ClInclude Include="Architect.h" />
     <ClInclude Include="Assassin.h" />
     <ClInclude Include="Board.h" />
     <ClInclude Include="BuildingCard.h" />
+    <ClInclude Include="ClientCommand.h" />
     <ClInclude Include="Demolisher.h" />
     <ClInclude Include="GameMaster.h" />
     <ClInclude Include="IRole.h" />
@@ -97,14 +94,14 @@
     <ClInclude Include="Player.h" />
     <ClInclude Include="Priest.h" />
     <ClInclude Include="RoleContext.h" />
+    <ClInclude Include="Socket.h" />
     <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Sync_queue.h" />
     <ClInclude Include="targetver.h" />
     <ClInclude Include="Thief.h" />
+    <ClInclude Include="throw.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\AVANS\Minor\CPP2\Opdrachten\socketexample\socketexample\main.cpp" />
-    <ClCompile Include="..\..\..\..\AVANS\Minor\CPP2\Opdrachten\socketexample\socketexample\Socket.cpp" />
-    <ClCompile Include="..\..\..\..\AVANS\Minor\CPP2\Opdrachten\socketexample\socketexample\throw.cpp" />
     <ClCompile Include="Architect.cpp" />
     <ClCompile Include="Assassin.cpp" />
     <ClCompile Include="Board.cpp" />
@@ -114,17 +111,20 @@
     <ClCompile Include="IRole.cpp" />
     <ClCompile Include="King.cpp" />
     <ClCompile Include="Mage.cpp" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="Merchant.cpp" />
     <ClCompile Include="Peasant.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="MachiavelliServer.cpp" />
     <ClCompile Include="Priest.cpp" />
     <ClCompile Include="RoleContext.cpp" />
+    <ClCompile Include="Socket.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="Thief.cpp" />
+    <ClCompile Include="throw.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

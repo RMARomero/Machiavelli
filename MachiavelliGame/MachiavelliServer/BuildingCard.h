@@ -12,7 +12,7 @@
 
 		virtual ~BuildingCard();
 		virtual int countPoints() { return m_iCost; }
-		virtual std::vector<std::string> getOptions() {}
+		virtual std::vector<std::string> getOptions();
 		virtual bool destroyable() { return true; };
 		virtual CardColor checkColor(CardColor playerColor){ return m_eColor; }
 		virtual void Run();

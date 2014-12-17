@@ -80,21 +80,21 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\AVANS\Minor\CPP2\Opdrachten\socketexample\socketexample\ClientCommand.h" />
-    <ClInclude Include="..\..\..\..\AVANS\Minor\CPP2\Opdrachten\socketexample\socketexample\Socket.h" />
-    <ClInclude Include="..\..\..\..\AVANS\Minor\CPP2\Opdrachten\socketexample\socketexample\Sync_queue.h" />
-    <ClInclude Include="..\..\..\..\AVANS\Minor\CPP2\Opdrachten\socketexample\socketexample\throw.h" />
+    <ClInclude Include="ClientCommand.h" />
+    <ClInclude Include="Socket.h" />
     <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Sync_queue.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="throw.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\AVANS\Minor\CPP2\Opdrachten\socketexample\socketexample\Socket.cpp" />
-    <ClCompile Include="..\..\..\..\AVANS\Minor\CPP2\Opdrachten\socketexample\socketexample\throw.cpp" />
     <ClCompile Include="MachiavelliGame.cpp" />
+    <ClCompile Include="Socket.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="throw.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

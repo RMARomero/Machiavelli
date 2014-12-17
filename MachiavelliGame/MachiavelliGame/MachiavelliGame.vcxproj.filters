@@ -27,16 +27,16 @@
     <ClInclude Include="targetver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\AVANS\Minor\CPP2\Opdrachten\socketexample\socketexample\ClientCommand.h">
+    <ClInclude Include="ClientCommand.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\AVANS\Minor\CPP2\Opdrachten\socketexample\socketexample\Socket.h">
+    <ClInclude Include="Socket.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\AVANS\Minor\CPP2\Opdrachten\socketexample\socketexample\Sync_queue.h">
+    <ClInclude Include="Sync_queue.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\AVANS\Minor\CPP2\Opdrachten\socketexample\socketexample\throw.h">
+    <ClInclude Include="throw.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -47,10 +47,10 @@
     <ClCompile Include="MachiavelliGame.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\AVANS\Minor\CPP2\Opdrachten\socketexample\socketexample\Socket.cpp">
+    <ClCompile Include="Socket.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\AVANS\Minor\CPP2\Opdrachten\socketexample\socketexample\throw.cpp">
+    <ClCompile Include="throw.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

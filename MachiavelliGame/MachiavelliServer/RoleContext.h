@@ -5,8 +5,11 @@ namespace std {
 	class RoleContext
 	{
 	public:
-		RoleContext();
+		static RoleContext getInstance();
 		virtual ~RoleContext();
+
+	private:
+		RoleContext();
 	};
 }//namespace std
 

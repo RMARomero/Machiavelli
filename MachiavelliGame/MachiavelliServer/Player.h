@@ -1,13 +1,12 @@
 #pragma once
 #include "stdafx.h"
 #include "BuildingCard.h"
-#include "IRole.h"
 
-
+class IRole;
 	class Player
 	{
 	public:
-		Player(int coins, bool king, IRole* role) : m_iCoins{ coins }, m_bKingToken{ king }, m_Role{ role }{}
+		Player(int coins, bool king) : m_iCoins{ coins }, m_bKingToken{ king } {}
 		virtual ~Player();
 
 		void Run();
@@ -22,7 +21,7 @@
 	protected:
 		bool m_bKingToken;
 		int m_iCoins;
-		IRole* m_Role;
+		//IRole* m_Role;
 		std::vector<BuildingCard> m_Hand;
 		std::vector<BuildingCard> m_Buildings;
 

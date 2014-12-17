@@ -1,5 +1,5 @@
 #include "Player.h"
-
+#include "IRole.h"
 
 Player::~Player()
 {

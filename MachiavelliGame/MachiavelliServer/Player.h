@@ -21,7 +21,7 @@ class IRole;
 	protected:
 		bool m_bKingToken;
 		int m_iCoins;
-		//IRole* m_Role;
+		//std::unique_ptr<IRole> m_Role;
 		std::vector<BuildingCard> m_Hand;
 		std::vector<BuildingCard> m_Buildings;
 

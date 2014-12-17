@@ -1,7 +1,6 @@
 #pragma once
 #include "IRole.h"
 
-namespace std {
 	class Assassin :
 		public IRole
 	{
@@ -23,5 +22,4 @@ namespace std {
 		void runExtraPhase(Player player);
 
 	};
-}//namespace std;
 

@@ -1,6 +1,7 @@
 #pragma once
 #include "IRole.h"
 
+
 	class Mage :
 		public IRole
 	{

@@ -1,15 +1,12 @@
 #pragma once
 
-namespace std {
-
 	class RoleContext
 	{
 	public:
-		static RoleContext getInstance();
+		static RoleContext& getInstance();
 		virtual ~RoleContext();
 
 	private:
-		RoleContext();
+		RoleContext() {}
 	};
-}//namespace std
 

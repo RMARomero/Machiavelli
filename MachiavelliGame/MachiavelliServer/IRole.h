@@ -1,7 +1,7 @@
 #pragma once
 #include "stdafx.h"
-#include "BuildingCard.h"
 #include "Player.h"
+#include "BuildingCard.h"
 
 	class IRole
 	{

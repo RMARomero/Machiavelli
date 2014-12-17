@@ -13,6 +13,7 @@
 #include <vector>
 #include <deque>
 #include <algorithm>
+#include <memory>
 
 
 enum CardColor { YELLOW, BLUE, GREEN, RED, PURPLE };

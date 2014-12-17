@@ -3,10 +3,10 @@
 	class RoleContext
 	{
 	public:
-		static RoleContext getInstance();
+		static RoleContext& getInstance();
 		virtual ~RoleContext();
 
 	private:
-		RoleContext();
+		RoleContext() {}
 	};
 

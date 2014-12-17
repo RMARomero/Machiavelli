@@ -25,6 +25,36 @@
     <Filter Include="Roles\Sources">
       <UniqueIdentifier>{99ce8eaf-b16f-4657-a21a-88e38c1ff01d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Game Sequence">
+      <UniqueIdentifier>{c21e0254-8535-4453-ae33-9dd606fbe172}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game Sequence\Rounds">
+      <UniqueIdentifier>{c2c4b2c7-75d0-4736-be29-7e51f060420c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game Sequence\Rounds\Turns">
+      <UniqueIdentifier>{2974058d-8032-43d7-8cef-b158f06c5ec7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game Sequence\Rounds\Turns\Phases">
+      <UniqueIdentifier>{29ac2c69-3ee3-434e-a8a7-225d02f1cdfe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game Sequence\Rounds\Phases">
+      <UniqueIdentifier>{b67508eb-6257-455e-bc53-3de5118b2652}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game Sequence\Rounds\Turns\Phases\Pick Role">
+      <UniqueIdentifier>{3d715675-9581-49b1-9fa6-86fef286aa75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game Sequence\Rounds\Turns\Phases\Main">
+      <UniqueIdentifier>{3215ef66-1996-4907-aee5-9308dbefc6c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game Sequence\Rounds\Turns\Phases\Clean Up">
+      <UniqueIdentifier>{ebb75c1d-4550-4882-816c-9812222a551c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game Sequence\Rounds\Turns\Phases\Factories">
+      <UniqueIdentifier>{bfb15870-6d95-4a73-8c2f-1a9303cb1720}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game Sequence\Rounds\Phases\Factory">
+      <UniqueIdentifier>{b9f1185a-7b79-49c9-8a1f-d5c7154efa4d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -37,12 +67,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="BuildingCard.h">
-      <Filter>Machiavelli</Filter>
-    </ClInclude>
-    <ClInclude Include="Board.h">
-      <Filter>Machiavelli</Filter>
-    </ClInclude>
-    <ClInclude Include="GameMaster.h">
       <Filter>Machiavelli</Filter>
     </ClInclude>
     <ClInclude Include="Player.h">
@@ -93,6 +117,75 @@
     <ClInclude Include="throw.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Board.h">
+      <Filter>Game Sequence</Filter>
+    </ClInclude>
+    <ClInclude Include="GameMaster.h">
+      <Filter>Game Sequence</Filter>
+    </ClInclude>
+    <ClInclude Include="Round.h">
+      <Filter>Game Sequence\Rounds</Filter>
+    </ClInclude>
+    <ClInclude Include="Turn.h">
+      <Filter>Game Sequence\Rounds\Turns</Filter>
+    </ClInclude>
+    <ClInclude Include="ITurnPhase.h">
+      <Filter>Game Sequence\Rounds\Turns\Phases</Filter>
+    </ClInclude>
+    <ClInclude Include="RoundPhase.h">
+      <Filter>Game Sequence\Rounds\Phases</Filter>
+    </ClInclude>
+    <ClInclude Include="ChooseRoleTurnPhase.h">
+      <Filter>Game Sequence\Rounds\Turns\Phases\Pick Role</Filter>
+    </ClInclude>
+    <ClInclude Include="MainTurnPhase.h">
+      <Filter>Game Sequence\Rounds\Turns\Phases\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="CleanUpTurnPhase.h">
+      <Filter>Game Sequence\Rounds\Turns\Phases\Clean Up</Filter>
+    </ClInclude>
+    <ClInclude Include="PickRoleTP.h">
+      <Filter>Game Sequence\Rounds\Turns\Phases\Pick Role</Filter>
+    </ClInclude>
+    <ClInclude Include="IncomeTP.h">
+      <Filter>Game Sequence\Rounds\Turns\Phases\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="SpecialTP.h">
+      <Filter>Game Sequence\Rounds\Turns\Phases\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="ExtraTP.h">
+      <Filter>Game Sequence\Rounds\Turns\Phases\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="BuildTP.h">
+      <Filter>Game Sequence\Rounds\Turns\Phases\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="ClosingTP.h">
+      <Filter>Game Sequence\Rounds\Turns\Phases\Clean Up</Filter>
+    </ClInclude>
+    <ClInclude Include="ITurnPhaseFactory.h">
+      <Filter>Game Sequence\Rounds\Turns\Phases\Factories</Filter>
+    </ClInclude>
+    <ClInclude Include="MainTPFactory.h">
+      <Filter>Game Sequence\Rounds\Turns\Phases\Factories</Filter>
+    </ClInclude>
+    <ClInclude Include="RoleTPFactory.h">
+      <Filter>Game Sequence\Rounds\Turns\Phases\Factories</Filter>
+    </ClInclude>
+    <ClInclude Include="CleanTPFactory.h">
+      <Filter>Game Sequence\Rounds\Turns\Phases\Factories</Filter>
+    </ClInclude>
+    <ClInclude Include="ChooseRollPhase.h">
+      <Filter>Game Sequence\Rounds\Phases</Filter>
+    </ClInclude>
+    <ClInclude Include="CleanUpPhase.h">
+      <Filter>Game Sequence\Rounds\Phases</Filter>
+    </ClInclude>
+    <ClInclude Include="MainPhase.h">
+      <Filter>Game Sequence\Rounds\Phases</Filter>
+    </ClInclude>
+    <ClInclude Include="RoundPhaseFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -102,12 +195,6 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="BuildingCard.cpp">
-      <Filter>Machiavelli</Filter>
-    </ClCompile>
-    <ClCompile Include="Board.cpp">
-      <Filter>Machiavelli</Filter>
-    </ClCompile>
-    <ClCompile Include="GameMaster.cpp">
       <Filter>Machiavelli</Filter>
     </ClCompile>
     <ClCompile Include="Player.cpp">
@@ -153,6 +240,75 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="throw.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Board.cpp">
+      <Filter>Game Sequence</Filter>
+    </ClCompile>
+    <ClCompile Include="GameMaster.cpp">
+      <Filter>Game Sequence</Filter>
+    </ClCompile>
+    <ClCompile Include="Round.cpp">
+      <Filter>Game Sequence\Rounds</Filter>
+    </ClCompile>
+    <ClCompile Include="Turn.cpp">
+      <Filter>Game Sequence\Rounds\Turns</Filter>
+    </ClCompile>
+    <ClCompile Include="ITurnPhase.cpp">
+      <Filter>Game Sequence\Rounds\Turns\Phases</Filter>
+    </ClCompile>
+    <ClCompile Include="RoundPhase.cpp">
+      <Filter>Game Sequence\Rounds\Phases</Filter>
+    </ClCompile>
+    <ClCompile Include="ChooseRoleTurnPhase.cpp">
+      <Filter>Game Sequence\Rounds\Turns\Phases\Pick Role</Filter>
+    </ClCompile>
+    <ClCompile Include="MainTurnPhase.cpp">
+      <Filter>Game Sequence\Rounds\Turns\Phases\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="CleanUpTurnPhase.cpp">
+      <Filter>Game Sequence\Rounds\Turns\Phases\Clean Up</Filter>
+    </ClCompile>
+    <ClCompile Include="PickRoleTP.cpp">
+      <Filter>Game Sequence\Rounds\Turns\Phases\Pick Role</Filter>
+    </ClCompile>
+    <ClCompile Include="IncomeTP.cpp">
+      <Filter>Game Sequence\Rounds\Turns\Phases\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="ExtraTP.cpp">
+      <Filter>Game Sequence\Rounds\Turns\Phases\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="BuildTP.cpp">
+      <Filter>Game Sequence\Rounds\Turns\Phases\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="SpecialTP.cpp">
+      <Filter>Game Sequence\Rounds\Turns\Phases\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="ClosingTP.cpp">
+      <Filter>Game Sequence\Rounds\Turns\Phases\Clean Up</Filter>
+    </ClCompile>
+    <ClCompile Include="ITurnPhaseFactory.cpp">
+      <Filter>Game Sequence\Rounds\Turns\Phases\Factories</Filter>
+    </ClCompile>
+    <ClCompile Include="RoleTPFactory.cpp">
+      <Filter>Game Sequence\Rounds\Turns\Phases\Factories</Filter>
+    </ClCompile>
+    <ClCompile Include="MainTPFactory.cpp">
+      <Filter>Game Sequence\Rounds\Turns\Phases\Factories</Filter>
+    </ClCompile>
+    <ClCompile Include="CleanTPFactory.cpp">
+      <Filter>Game Sequence\Rounds\Turns\Phases\Factories</Filter>
+    </ClCompile>
+    <ClCompile Include="MainPhase.cpp">
+      <Filter>Game Sequence\Rounds\Phases</Filter>
+    </ClCompile>
+    <ClCompile Include="ChooseRollPhase.cpp">
+      <Filter>Game Sequence\Rounds\Phases</Filter>
+    </ClCompile>
+    <ClCompile Include="CleanUpPhase.cpp">
+      <Filter>Game Sequence\Rounds\Phases</Filter>
+    </ClCompile>
+    <ClCompile Include="RoundPhaseFactory.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

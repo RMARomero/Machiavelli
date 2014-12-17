@@ -1,8 +1,16 @@
 #pragma once
+#include "Board.h"
+
 class GameMaster
 {
 public:
-	GameMaster();
+	static GameMaster& getInstance();
 	virtual ~GameMaster();
+
+	void Tick();
+
+private:
+	GameMaster(){}
+	Board m_Board;
 };
 

@@ -1,6 +1,5 @@
 #include "Board.h"
 
-using namespace std;
 
 Board::Board()
 {
@@ -13,7 +12,7 @@ Board::~Board()
 
 BuildingCard Board::drawCard()
 {
-	auto card = move(m_DrawDeck.front());
+	auto card = std::move(m_DrawDeck.front());
 	m_DrawDeck.pop_front();
 	return card;
 }

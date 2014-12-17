@@ -2,12 +2,13 @@
 #include "stdafx.h"
 //#include "IRole.h"
 #include "BuildingCard.h"
+#include "IRole.h"
 
 
 	class Player
 	{
 	public:
-		Player(int coins, bool king) : m_iCoins{ coins }, m_bKingToken{ king } {}
+		Player(int coins, bool king, IRole* role) : m_iCoins{ coins }, m_bKingToken{ king }, m_Role{ role }{}
 		virtual ~Player();
 
 		void Run();

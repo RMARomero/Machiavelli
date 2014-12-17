@@ -1,8 +1,8 @@
 #pragma once
 #include "stdafx.h"
-#include "Player.h"
 #include "BuildingCard.h"
 
+	class Player;
 	class IRole
 	{
 	public:

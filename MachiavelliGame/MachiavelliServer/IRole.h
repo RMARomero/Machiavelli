@@ -3,8 +3,6 @@
 #include "BuildingCard.h"
 #include "Player.h"
 
-namespace std
-{
 	class IRole
 	{
 	public:
@@ -24,6 +22,3 @@ namespace std
 		virtual void runBuildingPhase(Player player);
 		virtual void runExtraPhase(Player player);
 	};
-}
-
-} //namespace

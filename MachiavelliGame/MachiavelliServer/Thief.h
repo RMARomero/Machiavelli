@@ -1,7 +1,6 @@
 #pragma once
 #include "IRole.h"
 
-namespace std{
 
 	class Thief :
 		public IRole
@@ -23,5 +22,4 @@ namespace std{
 		void runBuildingPhase(Player player);
 		void runExtraPhase(Player player);
 	};
-}
 

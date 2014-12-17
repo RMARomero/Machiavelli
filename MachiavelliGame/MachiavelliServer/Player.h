@@ -3,8 +3,6 @@
 #include "BuildingCard.h"
 
 
-namespace std {
-
 	class IRole;
 	class Player
 	{
@@ -24,11 +22,9 @@ namespace std {
 	protected:
 		bool m_bKingToken;
 		int m_iCoins;
-		unique_ptr<IRole> m_Role;
-		vector<BuildingCard> m_Hand;
-		vector<BuildingCard> m_Buildings;
+		//std::unique_ptr<IRole> m_Role;
+		std::vector<BuildingCard> m_Hand;
+		std::vector<BuildingCard> m_Buildings;
 
 	};
-
-}// namespace std
 

@@ -1,7 +1,5 @@
 #pragma once
 
-namespace std {
-
 	class RoleContext
 	{
 	public:
@@ -11,5 +9,4 @@ namespace std {
 	private:
 		RoleContext();
 	};
-}//namespace std
 

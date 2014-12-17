@@ -1,6 +1,7 @@
 #include "stdafx.h"
 #include "Merchant.h"
 
+using namespace std;
 
 Merchant::Merchant()
 {

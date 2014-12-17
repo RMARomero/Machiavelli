@@ -1,24 +1,28 @@
 #pragma once
 #include "IRole.h"
-class Architect :
-	public IRole
-{
-public:
-	Architect();
-	virtual ~Architect();
 
-	void giveCard(Player player, BuildingCard card);
-	void giveMoney(Player player, int coins);
-	void destroyBuilding(Player player, int idx);
+namespace std{
 
-	void build(Player player, int idx);
-	int stealMoney(Player player);
+	class Architect :
+		public IRole
+	{
+	public:
+		Architect();
+		virtual ~Architect();
 
-	std::string getBuildingOptions(Player player);
-	void runIncomePhase(Player player);
-	void runSpecialPhase(Player player);
-	void runBuildingPhase(Player player);
-	void runExtraPhase(Player player);
+		void giveCard(Player player, BuildingCard card);
+		void giveMoney(Player player, int coins);
+		void destroyBuilding(Player player, int idx);
 
-};
+		void build(Player player, int idx);
+		int stealMoney(Player player);
+
+		std::string getBuildingOptions(Player player);
+		void runIncomePhase(Player player);
+		void runSpecialPhase(Player player);
+		void runBuildingPhase(Player player);
+		void runExtraPhase(Player player);
+
+	};
+}//namespace std
 

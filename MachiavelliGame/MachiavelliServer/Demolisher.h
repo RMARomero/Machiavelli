@@ -1,24 +1,27 @@
 #pragma once
 #include "IRole.h"
-class Demolisher :
-	public IRole
-{
-public:
-	Demolisher();
-	virtual ~Demolisher();
 
-	void giveCard(Player player, BuildingCard card);
-	void giveMoney(Player player, int coins);
-	void destroyBuilding(Player player, int idx);
+namespace std{
+	class Demolisher :
+		public IRole
+	{
+	public:
+		Demolisher();
+		virtual ~Demolisher();
 
-	void build(Player player, int idx);
-	int stealMoney(Player player);
+		void giveCard(Player player, BuildingCard card);
+		void giveMoney(Player player, int coins);
+		void destroyBuilding(Player player, int idx);
 
-	std::string getBuildingOptions(Player player);
-	void runIncomePhase(Player player);
-	void runSpecialPhase(Player player);
-	void runBuildingPhase(Player player);
-	void runExtraPhase(Player player);
+		void build(Player player, int idx);
+		int stealMoney(Player player);
 
-};
+		std::string getBuildingOptions(Player player);
+		void runIncomePhase(Player player);
+		void runSpecialPhase(Player player);
+		void runBuildingPhase(Player player);
+		void runExtraPhase(Player player);
+
+	};
+}//namespace std
 

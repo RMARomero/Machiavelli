@@ -6,6 +6,9 @@
 //  Copyright (c) 2014 Avans Hogeschool, 's-Hertogenbosch. All rights reserved.
 //
 
+//Ricardo Romero 2055915
+//Trevorr Marshall 2056109
+
 #include <thread>
 #include <iostream>
 #include <exception>

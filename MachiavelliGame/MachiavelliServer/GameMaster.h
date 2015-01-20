@@ -2,6 +2,7 @@
 #include "stdafx.h"
 #include "Board.h"
 #include "Round.h"
+#include "ServerState.h"
 
 using std::shared_ptr;
 using std::unique_ptr;
@@ -20,6 +21,7 @@ private:
 	GameMaster();
 	shared_ptr<Board> m_Board;
 	unique_ptr<Round> m_Round;
+	unique_ptr<ServerState> m_State;
 
 };
 

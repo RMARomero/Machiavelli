@@ -195,6 +195,21 @@
     <ClInclude Include="SocketManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="ServerState.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LobbyState.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayingState.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TerminateState.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerStateFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -324,6 +339,21 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="SocketManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LobbyState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayingState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TerminateState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerStateFactory.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

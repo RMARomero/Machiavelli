@@ -100,6 +100,7 @@
     <ClInclude Include="ITurnPhase.h" />
     <ClInclude Include="ITurnPhaseFactory.h" />
     <ClInclude Include="King.h" />
+    <ClInclude Include="LobbyState.h" />
     <ClInclude Include="Mage.h" />
     <ClInclude Include="MainPhase.h" />
     <ClInclude Include="MainTPFactory.h" />
@@ -109,18 +110,22 @@
     <ClInclude Include="PickRoleTP.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="PlayerList.h" />
+    <ClInclude Include="PlayingState.h" />
     <ClInclude Include="Priest.h" />
     <ClInclude Include="RoleContext.h" />
     <ClInclude Include="RoleTPFactory.h" />
     <ClInclude Include="Round.h" />
     <ClInclude Include="RoundPhase.h" />
     <ClInclude Include="RoundPhaseFactory.h" />
+    <ClInclude Include="ServerState.h" />
+    <ClInclude Include="ServerStateFactory.h" />
     <ClInclude Include="Socket.h" />
     <ClInclude Include="SocketManager.h" />
     <ClInclude Include="SpecialTP.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="Sync_queue.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="TerminateState.h" />
     <ClInclude Include="Thief.h" />
     <ClInclude Include="throw.h" />
     <ClInclude Include="Turn.h" />
@@ -145,6 +150,7 @@
     <ClCompile Include="ITurnPhase.cpp" />
     <ClCompile Include="ITurnPhaseFactory.cpp" />
     <ClCompile Include="King.cpp" />
+    <ClCompile Include="LobbyState.cpp" />
     <ClCompile Include="Mage.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MainPhase.cpp" />
@@ -156,12 +162,15 @@
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="MachiavelliServer.cpp" />
     <ClCompile Include="PlayerList.cpp" />
+    <ClCompile Include="PlayingState.cpp" />
     <ClCompile Include="Priest.cpp" />
     <ClCompile Include="RoleContext.cpp" />
     <ClCompile Include="RoleTPFactory.cpp" />
     <ClCompile Include="Round.cpp" />
     <ClCompile Include="RoundPhase.cpp" />
     <ClCompile Include="RoundPhaseFactory.cpp" />
+    <ClCompile Include="ServerState.cpp" />
+    <ClCompile Include="ServerStateFactory.cpp" />
     <ClCompile Include="Socket.cpp" />
     <ClCompile Include="SocketManager.cpp" />
     <ClCompile Include="SpecialTP.cpp" />
@@ -169,6 +178,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="TerminateState.cpp" />
     <ClCompile Include="Thief.cpp" />
     <ClCompile Include="throw.cpp" />
     <ClCompile Include="Turn.cpp" />

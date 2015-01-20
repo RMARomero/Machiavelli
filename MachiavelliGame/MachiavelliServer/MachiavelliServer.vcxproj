@@ -84,6 +84,7 @@
     <ClInclude Include="Board.h" />
     <ClInclude Include="BuildingCard.h" />
     <ClInclude Include="BuildTP.h" />
+    <ClInclude Include="CardDeck.h" />
     <ClInclude Include="ChooseRoleTurnPhase.h" />
     <ClInclude Include="ChooseRollPhase.h" />
     <ClInclude Include="CleanTPFactory.h" />
@@ -107,6 +108,7 @@
     <ClInclude Include="Peasant.h" />
     <ClInclude Include="PickRoleTP.h" />
     <ClInclude Include="Player.h" />
+    <ClInclude Include="PlayerList.h" />
     <ClInclude Include="Priest.h" />
     <ClInclude Include="RoleContext.h" />
     <ClInclude Include="RoleTPFactory.h" />
@@ -114,6 +116,7 @@
     <ClInclude Include="RoundPhase.h" />
     <ClInclude Include="RoundPhaseFactory.h" />
     <ClInclude Include="Socket.h" />
+    <ClInclude Include="SocketManager.h" />
     <ClInclude Include="SpecialTP.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="Sync_queue.h" />
@@ -152,6 +155,7 @@
     <ClCompile Include="PickRoleTP.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="MachiavelliServer.cpp" />
+    <ClCompile Include="PlayerList.cpp" />
     <ClCompile Include="Priest.cpp" />
     <ClCompile Include="RoleContext.cpp" />
     <ClCompile Include="RoleTPFactory.cpp" />
@@ -159,6 +163,7 @@
     <ClCompile Include="RoundPhase.cpp" />
     <ClCompile Include="RoundPhaseFactory.cpp" />
     <ClCompile Include="Socket.cpp" />
+    <ClCompile Include="SocketManager.cpp" />
     <ClCompile Include="SpecialTP.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>

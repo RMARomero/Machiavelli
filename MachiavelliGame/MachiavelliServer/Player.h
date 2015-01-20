@@ -1,29 +1,51 @@
 #pragma once
 #include "stdafx.h"
 #include "BuildingCard.h"
+#include "Socket.h"
+#include "CardDeck.h"
+
+using std::vector;
+using std::shared_ptr;
+using std::string;
 
 class IRole;
-	class Player
-	{
-	public:
-		Player(int coins, bool king) : m_iCoins{ coins }, m_bKingToken{ king } {}
-		virtual ~Player();
+class Player
+{
+public:
+	Player(shared_ptr<Socket> client): m_Socket{ client }{}
+	virtual ~Player();
 
-		void Run();
+	void Run();
 
-		void giveCard(BuildingCard card) { m_Hand.push_back(card); }
-		void giveMoney(int coins) { m_iCoins += coins; }
-		void destroyBuilding(int idx) { m_Buildings.erase(m_Buildings.begin() + idx); }
+	void GiveCard(shared_ptr<BuildingCard> card) { m_Hand->Push_Back(card); }
+	void GiveMoney(int coins) { m_iCoins += coins; }
 
-		void build(int idx);
-		int stealMoney();
+	eRole GetRole() { return m_eRole; }
+	string GetName() { return m_sName; }
+	shared_ptr<BuildingCard> DestroyBuilding(int idx) { m_Buildings->Take(idx); }
 
-	protected:
-		bool m_bKingToken;
-		int m_iCoins;
-		//std::unique_ptr<IRole> m_Role;
-		std::vector<BuildingCard> m_Hand;
-		std::vector<BuildingCard> m_Buildings;
+	void SetName(string name){ m_sName = name; }
+	void Send(string Message);
+	void AllowInput();
 
-	};
+	string RequestInput(string question);
+	int RequestInput(string question, vector<string> expectedAnswers);
+	string GetPlayerInput();
+
+	void Build(int idx);
+	int StealMoney();
+
+protected:
+	string m_sName;
+	int m_iAge;
+	bool m_bKingToken;
+	int m_iCoins;
+	eRole m_eRole;
+
+	shared_ptr<Socket> m_Socket;
+	shared_ptr<CardDeck<BuildingCard>> m_Hand;
+	shared_ptr<CardDeck<BuildingCard>> m_Buildings;
+
+	bool ValidateAnswer(string input, vector<string> expectedAnswers);
+};
 

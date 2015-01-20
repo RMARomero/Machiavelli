@@ -7,9 +7,6 @@ GameMaster& GameMaster::getInstance()
 	return _instance;
 }
 
-GameMaster::~GameMaster()
-{
-}
 
 void GameMaster::Tick()
 {

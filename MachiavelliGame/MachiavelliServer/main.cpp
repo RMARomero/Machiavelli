@@ -21,6 +21,13 @@
 
 using namespace std;
 
+/****************************************
+******Machiavelli Game - CPP2************
+	Ricardo Romero 2055915
+	Trevorr Marshall 2056109
+*****************************************
+*****************************************/
+
 //namespace socketexample {
 //    const int tcp_port {1080};
 //    const std::string prompt {"> "};
@@ -112,7 +119,7 @@ int main(int argc, const char * argv[])
 	srand(time(NULL));
 	SocketManager::getInstance().start();
 	//	delete sm;
-	return 0;
+    return 0;
 	//_CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
 }
 

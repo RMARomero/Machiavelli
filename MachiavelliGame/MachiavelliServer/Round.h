@@ -1,5 +1,9 @@
 #pragma once
 #include "RoundPhase.h"
+#include "PlayerList.h"
+
+using std::shared_ptr;
+using std::unique_ptr;
 
 class Player;
 class Round
@@ -9,8 +13,8 @@ public:
 	virtual ~Round();
 	void LoadPhases();
 
-	void Tick(std::vector<Player> playerList);
+	void Tick(shared_ptr<PlayerList> playerList);
 private:
-	std::vector<RoundPhase> m_Phases;
+	unique_ptr<RoundPhase> m_Phases;
 };
 

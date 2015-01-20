@@ -1,23 +1,27 @@
 #pragma once
 #include "stdafx.h"
-#include "Player.h"
+#include "PlayerList.h"
 #include "BuildingCard.h"
-	class Board
-	{
-	public:
-		Board();
-		virtual ~Board();
 
-		std::vector<Player> getPlayers(){ return m_Players; }
-		BuildingCard drawCard();
-		void discardCard(BuildingCard card) { m_DiscardPile.push_back(card); }
-		void shuffleDeck() { std::random_shuffle(m_DrawDeck.begin(), m_DrawDeck.end()); }
-		void resetDeck();
+using std::shared_ptr;
+
+class Board
+{
+public:
+	Board();
+	virtual ~Board();
+
+	shared_ptr<PlayerList> GetPlayers(){ return m_Players; }
+	shared_ptr<BuildingCard> DrawCard();
+	void discardCard(shared_ptr<BuildingCard> card) { m_DiscardPile->Push_Back(card); }
+	void shuffleDeck() { m_DrawDeck->Shuffle(); }
+	void resetDeck();
 
 
-	private:
-		std::vector<Player> m_Players;
-		std::deque<BuildingCard> m_DrawDeck;
-		std::vector<BuildingCard> m_DiscardPile;
-	};
+private:
+	shared_ptr<PlayerList> m_Players;
+
+	shared_ptr<CardDeck<BuildingCard>> m_DrawDeck;
+	shared_ptr<CardDeck<BuildingCard>> m_DiscardPile;
+};
 

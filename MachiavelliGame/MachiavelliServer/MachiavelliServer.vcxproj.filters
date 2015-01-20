@@ -186,6 +186,15 @@
     <ClInclude Include="RoundPhaseFactory.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="PlayerList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CardDeck.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SocketManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -309,6 +318,12 @@
       <Filter>Game Sequence\Rounds\Phases</Filter>
     </ClCompile>
     <ClCompile Include="RoundPhaseFactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SocketManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -1,5 +1,6 @@
 #include "stdafx.h"
 #include "GameMaster.h"
+#include "Round.h"
 
 GameMaster& GameMaster::getInstance()
 {
@@ -7,11 +8,14 @@ GameMaster& GameMaster::getInstance()
 	return _instance;
 }
 
-GameMaster::~GameMaster()
+GameMaster::GameMaster()
 {
+	m_Board = shared_ptr < Board > { new Board };
+	m_Round = unique_ptr < Round > { new Round };
 }
+
 
 void GameMaster::Tick()
 {
-
+	m_Round->Tick(m_Board->GetPlayers());
 }

@@ -3,6 +3,10 @@
 
 Board::Board()
 {
+	m_Players = shared_ptr< PlayerList > { new PlayerList};
+
+	m_DrawDeck = shared_ptr < CardDeck<BuildingCard> > { new CardDeck < BuildingCard > };
+	m_DiscardPile = shared_ptr < CardDeck<BuildingCard> > { new CardDeck < BuildingCard > };
 }
 
 
@@ -10,23 +14,14 @@ Board::~Board()
 {
 }
 
-BuildingCard Board::drawCard()
+std::shared_ptr<BuildingCard> Board::DrawCard()
 {
-	auto card = std::move(m_DrawDeck.front());
-	m_DrawDeck.pop_front();
-	return card;
+	return m_DrawDeck->Pop();
 }
 
 void Board::resetDeck()
 {
-	//first move everything from the discard pile into the drawing deck
-	m_DrawDeck.insert(
-		m_DrawDeck.begin(),
-		std::make_move_iterator(m_DiscardPile.begin()),
-		std::make_move_iterator(m_DiscardPile.end())
-		);
-	//then clear the discard pile
-	m_DiscardPile.clear();
-	//then shuffle the deck
-	shuffleDeck();
+	m_DrawDeck->ClearDeck();
+	m_DrawDeck->SetCards(m_DiscardPile->TakeCardPile());
+	m_DrawDeck->Shuffle();
 }

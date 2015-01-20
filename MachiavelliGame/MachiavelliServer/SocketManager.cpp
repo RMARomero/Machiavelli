@@ -73,10 +73,10 @@ void handle_client(Socket* socket) // this function runs in a separate thread
 
 void SocketManager::getServerInformation(){
 	std::string ip;
-	const string textfile("assets/config.txt");
+	const string textfile("../assets/config.txt");
 	// input file stream, opent textfile voor lezen
 	std::ifstream input_file(textfile);
-	input_file >> m_Port;
+	input_file >> ip >> m_Port;
 
 }
 

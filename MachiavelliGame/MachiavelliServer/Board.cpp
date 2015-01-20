@@ -3,6 +3,10 @@
 
 Board::Board()
 {
+	m_Players = shared_ptr< PlayerList > { new PlayerList};
+
+	m_DrawDeck = shared_ptr < CardDeck<BuildingCard> > { new CardDeck < BuildingCard > };
+	m_DiscardPile = shared_ptr < CardDeck<BuildingCard> > { new CardDeck < BuildingCard > };
 }
 
 

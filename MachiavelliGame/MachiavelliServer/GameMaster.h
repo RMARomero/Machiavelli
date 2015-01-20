@@ -17,7 +17,7 @@ public:
 
 	shared_ptr<PlayerList> GetPlayerList(){ return m_Board->GetPlayers(); }
 private:
-	GameMaster(){}
+	GameMaster();
 	shared_ptr<Board> m_Board;
 	unique_ptr<Round> m_Round;
 
